@@ -1,4 +1,4 @@
-package org.example.soapclient.clinet;
+package org.example.soapclient.client;
 
 import org.example.soapclient.consumeApi.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.ws.client.core.WebServiceTemplate;
 
 @Service
-public class SoapClinet {
+public class SoapClient {
 
 	@Autowired
 	private Jaxb2Marshaller marshaller;
