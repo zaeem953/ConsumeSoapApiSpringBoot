@@ -17,9 +17,9 @@ public class SoapClinet {
 
 	public AddEmployeeResponse addEmployee(AddEmployeeRequest request) {
 		template = new WebServiceTemplate(marshaller);
-		AddEmployeeResponse ServiceStatusResponce = (AddEmployeeResponse) template.marshalSendAndReceive("http://localhost:8080/allService",
+		AddEmployeeResponse addEmployeeResponse = (AddEmployeeResponse) template.marshalSendAndReceive("http://localhost:8080/allService",
 				request);
-		return ServiceStatusResponce;
+		return addEmployeeResponse;
 	}
 
 	public DeleteEmployeeResponse deleteEmployee(DeleteEmployeeRequest request) {
